@@ -4,6 +4,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
 
+    public float forwardForce = 2000f;
+    public float sidewaysForce= 500f;
     // Start is called before the first frame update
     // void Start()
     // {
@@ -13,6 +15,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, 2000 * Time.deltaTime); // add force of 2000 on z-axis
+        // Add a forward force
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime); // add force of 2000 on z-axis
+
+        if (Input.GetKey("d"))
+        {
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0); // go right on x-axis
+        }
+        if (Input.GetKey("a"))
+        {
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0); // go right on x-axis
+        }
     }
 }
