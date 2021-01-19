@@ -5,7 +5,9 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
 
     public float forwardForce = 2000f;
-    public float sidewaysForce= 500f;
+
+    public float sidewaysForce = 500f;
+
     // Start is called before the first frame update
     // void Start()
     // {
@@ -20,11 +22,19 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("d"))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0); // go right on x-axis
+            rb
+                .AddForce(sidewaysForce * Time.deltaTime,
+                0,
+                0,
+                ForceMode.VelocityChange); // go right on x-axis
         }
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0); // go right on x-axis
+            rb
+                .AddForce(-sidewaysForce * Time.deltaTime,
+                0,
+                0,
+                ForceMode.VelocityChange); // go right on x-axis
         }
     }
 }
