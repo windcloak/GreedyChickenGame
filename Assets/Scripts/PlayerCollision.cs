@@ -8,6 +8,7 @@ public class PlayerCollision : MonoBehaviour
     void OnCollisionEnter(Collision collisionInfo) {
         if (collisionInfo.collider.name == "Obstacle") {
             movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }

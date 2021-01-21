@@ -36,5 +36,11 @@ public class PlayerMovement : MonoBehaviour
                 0,
                 ForceMode.VelocityChange); // go right on x-axis
         }
+
+        // restart if player falls off
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
