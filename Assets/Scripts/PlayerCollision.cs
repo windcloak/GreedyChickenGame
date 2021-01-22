@@ -4,19 +4,13 @@ public class PlayerCollision : MonoBehaviour
 {
 
     public PlayerMovement movement;
-    public GameObject eatCandyEffect;
 
-    void OnCollisionEnter(Collision collisionInfo) {
-        if (collisionInfo.collider.name == "Obstacle") {
-            //movement.enabled = false;
-            //FindObjectOfType<GameManager>().EndGame();
-            EatCandy();
-        }
-    }
+    //void OnCollisionEnter(Collision collisionInfo) {
+    //    if (collisionInfo.collider.tag == "YellowCandy") {
+    //        //movement.enabled = false;
+    //        //FindObjectOfType<GameManager>().EndGame();
+    //        Score.score += 10;
+    //    }
+    //}
 
-    void EatCandy()
-    {
-        Debug.Log("Got candy");
-        // increase score                            
-    }
 }
