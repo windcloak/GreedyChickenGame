@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class YellowCandy : MonoBehaviour
+public class Coin : MonoBehaviour
 {
     public GameObject eatenEffect;
     public float candyPoints = 10f;
@@ -16,15 +16,15 @@ public class YellowCandy : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Score.score += candyPoints;
-            CandyEaten();
+            GetCoin();
         }
         
     }
 
-    void CandyEaten()
+    void GetCoin()
     {
+        Score.score += candyPoints;
         Instantiate(eatenEffect, transform.position, transform.rotation);   // show effect
-        Destroy(gameObject);    // destroy candy
+        Destroy(gameObject);    // destroy coin
     }
 }
