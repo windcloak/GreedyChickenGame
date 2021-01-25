@@ -23,6 +23,7 @@ public class Coin : MonoBehaviour
 
     void GetCoin()
     {
+        FindObjectOfType<AudioManager>().Play("Coin");
         Score.score += candyPoints;
         Instantiate(eatenEffect, transform.position, transform.rotation);   // show effect
         Destroy(gameObject);    // destroy coin

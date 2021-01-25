@@ -7,14 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
 
     public float sidewaysForce = 500f;
+    public float upwardsForce = 10f;
 
-    // Start is called before the first frame update
-    // void Start()
-    // {
-    //     rb.AddForce(0, 200, 500);
-    // }
-    // We marked this as FixedUpdate b/c we are using it to mess with physics
-    // Update is called once per frame
     void FixedUpdate()
     {
         // Add a forward force
@@ -37,13 +31,22 @@ public class PlayerMovement : MonoBehaviour
                 ForceMode.VelocityChange); // go right on x-axis
         }
 
+
         // restart if player falls off
         if (rb.position.y < -1f)
         {
+            ResetPlayer();
+        }
+
+        void ResetPlayer()
+        {
+
             FindObjectOfType<GameManager>().EndGame();
             FindObjectOfType<AudioManager>().Play("PlayerReset");
             Debug.Log("reset");
             Score.Reset();
+
         }
     }
+
 }
