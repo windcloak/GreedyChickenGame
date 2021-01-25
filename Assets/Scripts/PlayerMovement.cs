@@ -5,9 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
 
     public float forwardForce = 2000f;
-
     public float sidewaysForce = 500f;
-    public float upwardsForce = 10f;
 
     void FixedUpdate()
     {
@@ -21,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
                 0,
                 0,
                 ForceMode.VelocityChange); // go right on x-axis
+       
         }
         if (Input.GetKey("a"))
         {
