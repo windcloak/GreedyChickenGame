@@ -19,4 +19,9 @@ public class Score : MonoBehaviour
         score = 0;
     }
 
+    public static float GetScore()
+    {
+        return score;
+    }
+
 }
