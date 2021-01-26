@@ -8,6 +8,11 @@ public class Level : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // checks if we are at last level
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+        {
+            Debug.Log("we at last level");
+        }
         currentLevel.text = "LEVEL " + SceneManager.GetActiveScene().buildIndex.ToString();
     }
 

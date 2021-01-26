@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 2)
         {
             loadNextLevelUI.SetActive(false);
+            Debug.Log("we at last level");
         }
     }
 

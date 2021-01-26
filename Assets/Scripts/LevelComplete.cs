@@ -9,6 +9,7 @@ public class LevelComplete : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             LoadNextLevel();    // load credits scene
+            Debug.Log("we at last level");
         }
     }
     public void LoadNextLevel()
