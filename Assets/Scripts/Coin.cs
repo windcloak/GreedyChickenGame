@@ -4,13 +4,6 @@ public class Coin : MonoBehaviour
 {
     public GameObject eatenEffect;
     public float candyPoints = 10f;
-    //void OnCollisionEnter(Collision collisionInfo)
-    //{
-    //    if (collisionInfo.collider.name == "Player")
-    //    {
-    //        CandyEaten();
-    //    }
-    //}
 
     private void OnTriggerEnter(Collider collider)
     {

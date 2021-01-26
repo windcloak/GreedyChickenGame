@@ -37,15 +37,16 @@ public class PlayerMovement : MonoBehaviour
             ResetPlayer();
         }
 
-        void ResetPlayer()
-        {
+    }
 
-            FindObjectOfType<GameManager>().EndGame();
-            FindObjectOfType<AudioManager>().Play("PlayerReset");
-            Debug.Log("reset");
-            Score.Reset();
+    void ResetPlayer()
+    {
 
-        }
+        FindObjectOfType<GameManager>().EndGame();
+        FindObjectOfType<AudioManager>().Play("PlayerReset");
+        Debug.Log("reset");
+        Score.Reset();
+
     }
 
 }
