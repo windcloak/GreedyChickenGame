@@ -6,13 +6,15 @@ public class PlayerMovement : MonoBehaviour
 
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
+    public bool isMoving = true;
 
     void FixedUpdate()
     {
         // Add a forward force
-        rb.AddForce(0, 0, forwardForce * Time.deltaTime); // add force of 2000 on z-axis
+        if (isMoving)
+            rb.AddForce(0, 0, forwardForce * Time.deltaTime); // add force of 2000 on z-axis
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") && isMoving)
         {
             rb
                 .AddForce(sidewaysForce * Time.deltaTime,
@@ -21,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
                 ForceMode.VelocityChange); // go right on x-axis
        
         }
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") && isMoving)
         {
             rb
                 .AddForce(-sidewaysForce * Time.deltaTime,
@@ -32,13 +34,14 @@ public class PlayerMovement : MonoBehaviour
 
 
         // restart if player falls off
-        if (rb.position.y < -1f)
+        if (rb.position.y < -1f && isMoving)
         {
 
             ResetPlayer();
         }
 
     }
+
 
     public static void ResetPlayer()
     {

@@ -3,11 +3,18 @@
 public class EndTrigger : MonoBehaviour
 {
     public GameManager gameManager;
-    private PlayerMovement movement;
-    void OnTriggerEnter()
+    public PlayerMovement movement;
+    void OnTriggerEnter(Collider collider)
     {
-        gameManager.CompleteLevel();
-        movement.enabled = false;
-    }
-}
+        if (collider.gameObject.tag == "Player")
+        {
+            gameManager.CompleteLevel();
+            movement.isMoving = false;  // do not let Player move
+        }
  
+    }
+
+
+
+}
+

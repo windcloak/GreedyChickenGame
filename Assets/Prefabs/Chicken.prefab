@@ -79,7 +79,6 @@ GameObject:
   - component: {fileID: 8553662559199796158}
   - component: {fileID: 8553662559199796156}
   - component: {fileID: 8553662559199796155}
-  - component: {fileID: 8553662559199796152}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Player
@@ -205,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 8553662559199796155}
+  foxCollision: 30
 --- !u!114 &8553662559199796155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,22 +220,6 @@ MonoBehaviour:
   rb: {fileID: 8553662559199796154}
   forwardForce: 5000
   sidewaysForce: 150
---- !u!114 &8553662559199796152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8552369072634709944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RigLayers:
-  - rig: {fileID: 0}
-    active: 1
-  m_Effectors: []
 --- !u!1 &8552415684458730818
 GameObject:
   m_ObjectHideFlags: 0
