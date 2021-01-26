@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
     bool gameHasEnded = false;
     public float restartDelay = 1f;
     public GameObject completeLevelUI;
-    bool isLastLevel = false;
     public GameObject loadNextLevelUI;
 
     public void CompleteLevel()
@@ -16,7 +15,6 @@ public class GameManager : MonoBehaviour
         // check if we are at final level
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 2)
         {
-            isLastLevel = true;
             loadNextLevelUI.SetActive(false);
         }
     }
