@@ -8,6 +8,7 @@ TagManager:
   - YellowCandy
   - Candy
   - Fox
+  - Coin
   layers:
   - Default
   - TransparentFX

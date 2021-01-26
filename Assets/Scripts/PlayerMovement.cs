@@ -34,17 +34,17 @@ public class PlayerMovement : MonoBehaviour
         // restart if player falls off
         if (rb.position.y < -1f)
         {
+
             ResetPlayer();
         }
 
     }
 
-    void ResetPlayer()
+    public static void ResetPlayer()
     {
 
         FindObjectOfType<GameManager>().EndGame();
         FindObjectOfType<AudioManager>().Play("PlayerReset");
-        Debug.Log("reset");
         Score.Reset();
 
     }

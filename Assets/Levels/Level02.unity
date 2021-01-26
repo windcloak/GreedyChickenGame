@@ -734,7 +734,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453600459}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.83, y: 1.74, z: 2.77}
@@ -1330,6 +1330,11 @@ PrefabInstance:
     - target: {fileID: 8555709637059510966, guid: ea69847b43b4cb24c9cfbddc5145f39b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638024135610383492, guid: ea69847b43b4cb24c9cfbddc5145f39b,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

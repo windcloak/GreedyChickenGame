@@ -4,9 +4,9 @@ public class Fox : MonoBehaviour
 {
 
     public GameObject hitEffect;
-    private void OnTriggerEnter(Collider collider)
+    private void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collisionInfo.collider.tag == "Player")
         {
             HitPlayer();
         }

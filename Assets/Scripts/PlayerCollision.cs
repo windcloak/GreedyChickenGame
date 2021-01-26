@@ -6,12 +6,18 @@ public class PlayerCollision : MonoBehaviour
     public PlayerMovement movement;
     public float foxCollision = 30f;
 
-    private void OnTriggerEnter(Collider collider)
+    private void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collider.gameObject.tag == "Fox")
+        if (collisionInfo.collider.tag == "Fox")
         {
+            if (Score.score - foxCollision < 0)
+            {
+                PlayerMovement.ResetPlayer();
+            } else
+            {
+
             Score.score -= foxCollision;
-            Debug.Log("you hit the fox!");
+            }
         }
 
     }
