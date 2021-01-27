@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Credits : MonoBehaviour
 {
-
     public void Quit()
     {
         Debug.Log("quit");
@@ -14,4 +14,6 @@ public class Credits : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+
 }
