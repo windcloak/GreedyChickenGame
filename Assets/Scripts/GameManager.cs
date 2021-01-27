@@ -4,20 +4,28 @@ using UnityEngine.SceneManagement;  // need to change or reload scene
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
+    bool isFinalLevel = false;
     public float restartDelay = 1f;
     public GameObject completeLevelUI;
     public GameObject loadNextLevelUI;
 
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
-
-        // check if we are at final level
         if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 2)
         {
-            loadNextLevelUI.SetActive(false);
-            Debug.Log("we at last level");
+            isFinalLevel = true;
         }
+
+        if (!isFinalLevel)
+        {
+
+            completeLevelUI.SetActive(true);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 
     public void EndGame()
