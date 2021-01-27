@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
 
     public static AudioManager instance;
+    public AudioMixer audioMixer;
 
     void Awake()
     {
@@ -47,4 +48,11 @@ public class AudioManager : MonoBehaviour
 
         s.source.Play();
     }
+
+    public void SetVolume(float volume)
+    {
+        //audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+    }
+
 }
