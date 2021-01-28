@@ -414,10 +414,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 928520564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23ec46ed138259144ac5150087059c46, type: 3}
+  m_Script: {fileID: 11500000, guid: b03fac04f51c450489469309e089801e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalScore: {fileID: 928520566}
+  levelCompleteScore: {fileID: 928520566}
 --- !u!1 &1131743166
 GameObject:
   m_ObjectHideFlags: 0
