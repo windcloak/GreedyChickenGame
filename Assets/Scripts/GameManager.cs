@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     bool isFinalLevel = false;
     public float restartDelay = 1f;
     public GameObject completeLevelUI;
-    public GameObject loadNextLevelUI;
 
     public void CompleteLevel()
     {

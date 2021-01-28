@@ -338,6 +338,7 @@ GameObject:
   - component: {fileID: 928520567}
   - component: {fileID: 928520566}
   - component: {fileID: 928520568}
+  - component: {fileID: 928520569}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -418,6 +419,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCompleteScore: {fileID: 928520566}
+--- !u!114 &928520569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928520564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.09054487, g: 0.4433962, b: 0.04392132, a: 0.41568628}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1131743166
 GameObject:
   m_ObjectHideFlags: 0

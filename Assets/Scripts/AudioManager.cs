@@ -46,12 +46,6 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // lower volume if game is paused
-        if (PauseMenu.GameIsPaused)
-        {
-            s.source.volume *= .5f;
-        }
-
         s.source.Play();
     }
 
