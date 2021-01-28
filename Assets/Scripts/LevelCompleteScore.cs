@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class LevelCompleteScore : MonoBehaviour
 {
-    public Text levelCompleteScore;
+    public TMPro.TMP_Text levelCompleteScore;
 
     void Start()
     {
