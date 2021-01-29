@@ -5,10 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
-  - YellowCandy
-  - Candy
   - Fox
   - Coin
+  - Strawberry
   layers:
   - Default
   - TransparentFX

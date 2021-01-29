@@ -22,13 +22,4 @@ public class PlayerCollision : MonoBehaviour
 
     }
 
-    //void OnCollisionEnter(Collision collisionInfo)
-    //{
-    //    if (collisionInfo.collider.tag == "Fox")
-    //    {
-    //        //movement.enabled = false;
-    //        //FindObjectOfType<GameManager>().EndGame();
-    //    }
-    //}
-
 }

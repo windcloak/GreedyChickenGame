@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Strawberry : MonoBehaviour
 {
-    public GameObject eatenEffect;
-    public float candyPoints = 10f;
 
+    public GameObject eatenEffect;
+    public float strawberryPoints = 30f;
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.CompareTag("Player"))
         {
-            GetCoin();
+            GetStrawberry();
         }
-        
+
     }
 
-    void GetCoin()
+    void GetStrawberry()
     {
         FindObjectOfType<AudioManager>().Play("Coin");
-        Score.score += candyPoints;
+        Score.score += strawberryPoints;
         Instantiate(eatenEffect, transform.position, transform.rotation);   // show effect
-        Destroy(gameObject);    // destroy coin
+        Destroy(gameObject);
     }
 }
