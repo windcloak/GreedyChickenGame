@@ -16,7 +16,7 @@ public class Strawberry : MonoBehaviour
 
     void GetStrawberry()
     {
-        FindObjectOfType<AudioManager>().Play("Coin");
+        FindObjectOfType<AudioManager>().Play("Strawberry");
         Score.score += strawberryPoints;
         Instantiate(eatenEffect, transform.position, transform.rotation);   // show effect
         Destroy(gameObject);

@@ -57,7 +57,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: Coin
-    clip: {fileID: 8300000, guid: 07302d8f6d2b7b044bf86c525268c4f0, type: 3}
+    clip: {fileID: 8300000, guid: 6a8c60075137cfd4399c724d469adb9f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -68,3 +68,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: f9390048cef5143fab5373e6dd3c429e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Strawberry
+    clip: {fileID: 8300000, guid: 07302d8f6d2b7b044bf86c525268c4f0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  audioMixer: {fileID: 0}

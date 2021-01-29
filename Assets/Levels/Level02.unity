@@ -2214,8 +2214,13 @@ PrefabInstance:
     - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
         type: 3}
       propertyPath: sounds.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a8c60075137cfd4399c724d469adb9f, type: 3}
     - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
         type: 3}
       propertyPath: sounds.Array.data[4].clip
@@ -2228,12 +2233,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
         type: 3}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 07302d8f6d2b7b044bf86c525268c4f0, type: 3}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[5].name
+      value: Strawberry
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
       propertyPath: sounds.Array.data[4].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
         type: 3}
+      propertyPath: sounds.Array.data[5].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
       propertyPath: sounds.Array.data[4].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[5].volume
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5593865480377665962, guid: 4c77d4848bb6f814da89857e6188f899,

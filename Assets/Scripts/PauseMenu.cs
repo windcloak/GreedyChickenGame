@@ -43,11 +43,13 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        FindObjectOfType<AudioManager>().Play("Button");
         SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {
         Application.Quit();
+        FindObjectOfType<AudioManager>().Play("Button");
         Debug.Log("quit");
     }
 
