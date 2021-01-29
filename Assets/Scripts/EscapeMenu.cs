@@ -19,6 +19,10 @@ public class EscMenu : MonoBehaviour
                 Pause();
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            PauseMenu();   // go to Pause menu
+        }
     }
 
     public void Resume()
@@ -45,5 +49,10 @@ public class EscMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    void PauseMenu()
+    {
+        escMenuUI.SetActive(false);
     }
 }

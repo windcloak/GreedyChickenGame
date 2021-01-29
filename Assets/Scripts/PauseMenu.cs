@@ -6,7 +6,6 @@ public class PauseMenu : MonoBehaviour
     // want to be able to check from other scripts what this value is. don't want to reference this script
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public GameObject escMenuUI;
 
     // Update is called once per frame
     void Update()
