@@ -2211,6 +2211,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24100000, guid: dd515125678eeb34bba288427360bda1,
         type: 2}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f9390048cef5143fab5373e6dd3c429e, type: 3}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[4].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593865480377665961, guid: 4c77d4848bb6f814da89857e6188f899,
+        type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5593865480377665962, guid: 4c77d4848bb6f814da89857e6188f899,
         type: 3}
       propertyPath: m_Name
