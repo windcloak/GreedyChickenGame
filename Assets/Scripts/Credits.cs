@@ -15,6 +15,7 @@ public class Credits : MonoBehaviour
     {
 
         FindObjectOfType<AudioManager>().Play("Button");
+        Score.Reset();
         SceneManager.LoadScene(1);
     }
 
