@@ -8,6 +8,7 @@ TagManager:
   - Fox
   - Coin
   - Strawberry
+  - Bomb
   layers:
   - Default
   - TransparentFX
