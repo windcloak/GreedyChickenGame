@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
             {
@@ -19,10 +19,7 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
-        } else if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Escape();   // go to Esc menu
-        }
+        } 
     }
 
     public void Resume()
@@ -52,8 +49,4 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("quit");
     }
 
-    void Escape()
-    {
-        pauseMenuUI.SetActive(false);
-    }
 }
