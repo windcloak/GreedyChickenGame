@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Credits : MonoBehaviour
 {
@@ -17,6 +16,14 @@ public class Credits : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Button");
         Score.Reset();
         SceneManager.LoadScene(1);
+    }
+
+    public void Menu()
+    {
+
+        FindObjectOfType<AudioManager>().Play("Button");
+        Score.Reset();
+        SceneManager.LoadScene(0);
     }
 
 
