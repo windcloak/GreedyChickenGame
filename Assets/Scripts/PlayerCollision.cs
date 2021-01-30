@@ -5,7 +5,7 @@ public class PlayerCollision : MonoBehaviour
 
     public PlayerMovement movement;
     public float foxCollision = 30f;
-    public float bombCollision = 50f;
+    public float bombCollision = 60f;
 
     private void OnCollisionEnter(Collision collisionInfo)
     {
