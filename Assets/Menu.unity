@@ -2306,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 7362786154979301852, guid: 74c389925ed6b4d4d8adb9876d27c4e7,
         type: 3}
       propertyPath: m_text
-      value: how to play
+      value: tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 7362786154979301852, guid: 74c389925ed6b4d4d8adb9876d27c4e7,
         type: 3}
