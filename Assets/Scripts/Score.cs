@@ -5,6 +5,7 @@ public class Score : MonoBehaviour
 {
     public Text scoreText;
     public static float score = 0f;
+    private static float lastScore = 0f;
 
     // Update is called once per frame
     void Update()
@@ -12,9 +13,14 @@ public class Score : MonoBehaviour
         scoreText.text = score.ToString("0");
     }
 
+    public static void UpdateLastScore()
+    {
+        lastScore = score;
+    }
+
     public static void Reset()
     {
-        score = 0;
+        score = lastScore;
     }
 
     public static float GetScore()

@@ -8,6 +8,7 @@ public class LevelCompleteScore : MonoBehaviour
     void Start()
     {
         levelCompleteScore.text = "SCORE: " + Score.GetScore().ToString("0");
+        Score.UpdateLastScore();    // update score to score at last level
     }
 
 }
