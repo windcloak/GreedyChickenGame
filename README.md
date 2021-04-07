@@ -3,6 +3,16 @@
 [Play Greedy Chicken on Unity website 
 ![Intro Menu](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_1.jpg)](https://play.unity.com/mg/other/webgl-builds-14188)
 
+## Implementation
+Greedy Chicken is a 3D game made in Unity. It's based off of [Brackey's how to make a game tutorial](https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR53Jce9hP7G5xC4O9AgnOuL&index=1), with some modifications
+All scripts are written in C# in Visual Studio:
+- AudioManager manages all the audio files. It is a list, and it plays the audio with a certain name.
+- GameManager manages the transitions betweel levels. It has the methods: CompleteLevel(), EndGame(), and Restart(). It must be present in scenes where the player can transition to another scene, and when displaying the final score. 
+- SettingsMenu, PauseMenu, and LevelComplete all have methods that can be called on by the buttons in those menus
+- Coin has methods for when the Player gets it. OnTriggerEnter() method fires when the Player collides with it, and it calls the GetCoin() method, which is has the score increase, eaten effect (sparkly effect when Player gets a coin), and destroy game object.
+- Strawberry is almost the same as Coin, but with a different eatenEffect and points
+- Bomb and Fox is almost the same as Coin, except it has onCollisionEnter() instead because I want the Player to physically hit it. Hitting it will reset Player's position.
+
 ## Screenshots
 ![Tutorial](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_2.jpg)
 ![Settings](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_3.jpg)
@@ -14,16 +24,6 @@
 ![Bomb](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_9.jpg)
 ![Win Screen](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_10.jpg)
 
-
-## Implementation
-Greedy Chicken is a 3D game made in Unity. It's based off of [Brackey's how to make a game tutorial](https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR53Jce9hP7G5xC4O9AgnOuL&index=1), with some modifications
-All scripts are written in C# in Visual Studio:
-- AudioManager manages all the audio files. It is a list, and it plays the audio with a certain name.
-- GameManager manages the transitions betweel levels. It has the methods: CompleteLevel(), EndGame(), and Restart(). It must be present in scenes where the player can transition to another scene, and when displaying the final score. 
-- SettingsMenu, PauseMenu, and LevelComplete all have methods that can be called on by the buttons in those menus
-- Coin has methods for when the Player gets it. OnTriggerEnter() method fires when the Player collides with it, and it calls the GetCoin() method, which is has the score increase, eaten effect (sparkly effect when Player gets a coin), and destroy game object.
-- Strawberry is almost the same as Coin, but with a different eatenEffect and points
-- Bomb and Fox is almost the same as Coin, except it has onCollisionEnter() instead because I want the Player to physically hit it 
 
 ## Assets Used
 - https://assetstore.unity.com/packages/3d/characters/3d-monster-bomb-145319
