@@ -12,6 +12,19 @@ All scripts are written in C# in Visual Studio:
 - Strawberry is almost the same as Coin, but with a different eatenEffect and points
 - Bomb and Fox is almost the same as Coin, except it has onCollisionEnter() instead because I want the Player to physically hit it 
 
+## Screenshots
+![Intro Menu](https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_1.jpg)
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_2.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_3.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_4.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_5.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_5.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_6.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_7.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_8.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_9.jpg
+https://github.com/windcloak/GreedyChickenGame/blob/main/screenshots/Screenshot_10.jpg
+
 ## Assets Used
 - https://assetstore.unity.com/packages/3d/characters/3d-monster-bomb-145319
 - https://assetstore.unity.com/packages/3d/characters/animals/toon-fox-183005
